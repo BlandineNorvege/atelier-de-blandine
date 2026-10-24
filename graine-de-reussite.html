@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Graine de réussite · Apprendre autrement à Châlons-en-Champagne</title>
+<meta name="description" content="Apprendre à sa façon, avec la tête, le cœur et les mains : un accompagnement bienveillant pour enfants et ados, à Châlons-en-Champagne ou à distance. Séance découverte offerte.">
+<link rel="canonical" href="https://blandinenorvege.github.io/atelier-de-blandine/graine-de-reussite">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="L&#x27;Atelier de Blandine">
+<meta property="og:title" content="Graine de réussite · Apprendre autrement à Châlons-en-Champagne">
+<meta property="og:description" content="Apprendre à sa façon, avec la tête, le cœur et les mains : un accompagnement bienveillant pour enfants et ados, à Châlons-en-Champagne ou à distance. Séance découverte offerte.">
+<meta property="og:url" content="https://blandinenorvege.github.io/atelier-de-blandine/graine-de-reussite">
+<meta property="og:image" content="https://blandinenorvege.github.io/atelier-de-blandine/images/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blush:#FAF6F0;
+    --rose:#E8A6B0;
+    --rose-deep:#7E9478;
+    --plum:#4A4A40;
+    --plum-soft:#6E7266;
+    --leaf:#9FB69A;
+    --leaf-deep:#7E9478;
+    --cream:#FFFCF8;
+    --gold:#D9B679;
+    --gold-deep:#B8954F;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Nunito Sans',system-ui,sans-serif;color:var(--plum);line-height:1.75;font-size:18px;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+    background:
+      radial-gradient(circle at 12% 6%,rgba(232,166,176,.20),transparent 24%),
+      radial-gradient(circle at 30% 18%,rgba(159,182,154,.26),transparent 26%),
+      radial-gradient(circle at 86% 14%,rgba(217,182,121,.24),transparent 28%),
+      radial-gradient(circle at 78% 40%,rgba(232,166,176,.18),transparent 26%),
+      radial-gradient(circle at 16% 52%,rgba(217,182,121,.20),transparent 26%),
+      radial-gradient(circle at 88% 70%,rgba(159,182,154,.24),transparent 26%),
+      radial-gradient(circle at 24% 84%,rgba(232,166,176,.18),transparent 26%),
+      radial-gradient(circle at 80% 94%,rgba(217,182,121,.20),transparent 26%),
+      linear-gradient(175deg,#FDF6F1,#FAF6F0 55%,#F8F0E9);
+    background-attachment:fixed;}
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.15;letter-spacing:-.01em;font-optical-sizing:none;font-variation-settings:'opsz' 24,'SOFT' 0,'WONK' 0;}
+  .script{font-family:'Berkshire Swash',cursive;font-weight:400}
+  em{font-style:italic}
+  a{color:inherit}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:14px clamp(20px,5vw,56px);background:rgba(252,239,241,.85);backdrop-filter:blur(10px);border-bottom:1px solid rgba(217,182,121,.28)}
+  .brand{font-family:'Berkshire Swash',cursive;font-size:1.7rem;color:var(--rose-deep);display:flex;align-items:center;gap:.5rem;line-height:1}
+  .brand svg{flex:none}
+  .nav-links{display:flex;gap:clamp(14px,2.4vw,30px);list-style:none}
+  .nav-links a{text-decoration:none;font-size:.82rem;letter-spacing:.06em;text-transform:uppercase;color:var(--plum-soft);transition:color .25s;font-weight:600}
+  .nav-links a:hover{color:var(--gold-deep)}
+  .nav-toggle{display:none;background:none;border:0;cursor:pointer;color:var(--rose-deep);font-size:1.6rem}
+
+  .stem{position:fixed;left:max(20px,calc((100vw - var(--maxw))/2 - 28px));top:0;width:2px;height:100%;z-index:5;pointer-events:none}
+  .stem-line{position:absolute;top:0;left:0;width:2px;height:0;background:linear-gradient(var(--leaf),var(--leaf-deep));transition:height .15s linear}
+  @media(max-width:1180px){.stem{display:none}}
+
+  section{padding:clamp(70px,11vh,120px) clamp(20px,6vw,56px);position:relative}
+  .wrap{max-width:var(--maxw);margin:0 auto}
+  .eyebrow{font-size:.8rem;letter-spacing:.22em;text-transform:uppercase;color:var(--gold-deep);font-weight:700;margin-bottom:1rem}
+
+  .hero{padding:84px 0 60px;text-align:center;position:relative;overflow:hidden}
+  /* bandeau du nom, pleine largeur */
+  .band-logo{width:100%;padding:clamp(40px,8vw,72px) 20px;display:flex;flex-direction:column;align-items:center;justify-content:center;
+    background:radial-gradient(circle at 50% 40%,rgba(255,255,255,.7),rgba(159,182,154,.32) 55%,rgba(217,182,121,.30) 100%);
+    border-top:1px solid rgba(217,182,121,.5);border-bottom:1px solid rgba(217,182,121,.5);
+    box-shadow:inset 0 0 60px rgba(255,255,255,.4),0 10px 40px rgba(159,182,154,.22)}
+  .band-name{font-family:'Berkshire Swash',cursive;font-size:clamp(2.4rem,8vw,4rem);line-height:1;
+    background:linear-gradient(95deg,var(--gold-deep),var(--leaf-deep),var(--gold-deep));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+  .band-tag{font-size:.66rem;letter-spacing:.3em;text-transform:uppercase;color:var(--gold-deep);margin-top:.6rem;font-weight:700}
+  /* bandeau du slogan, pleine largeur */
+  .band-sub{width:100%;padding:clamp(22px,3.5vw,34px) 20px;margin-top:14px;
+    font-family:'Fraunces',serif;font-optical-sizing:none;font-style:italic;font-size:clamp(1.4rem,3.6vw,2rem);color:var(--leaf-deep);
+    background:linear-gradient(100deg,rgba(159,182,154,.30),rgba(217,182,121,.28));
+    border-top:1px solid rgba(217,182,121,.45);border-bottom:1px solid rgba(217,182,121,.45)}
+  /* Bloc d'introduction éditorial : aligné à gauche, sans cadre, marges équilibrées */
+  .intro-editorial{max-width:62ch;margin:0 auto;padding:clamp(48px,7vh,72px) clamp(24px,6vw,40px) clamp(8px,2vh,20px);text-align:left}
+  .intro-text{color:var(--plum-soft);font-size:1.08rem;line-height:1.85}
+  .intro-with-img{max-width:980px;display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,56px);align-items:center}
+  .intro-img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;object-position:52% 50%;border-radius:50%;border:6px solid var(--cream);box-shadow:0 18px 44px rgba(126,148,120,.22)}
+  @media(max-width:760px){.intro-with-img{grid-template-columns:1fr}.intro-img{max-width:420px;margin:0 auto}}
+  .intro-bridge{margin-top:1.8rem;font-family:'Fraunces',Georgia,serif;font-size:clamp(1.15rem,2.4vw,1.4rem);
+    line-height:1.6;color:var(--leaf-deep)}
+  .cta-row{margin-top:2.4rem;display:flex;gap:1rem;flex-wrap:wrap}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;font-size:.95rem;padding:.85em 1.7em;border-radius:40px;transition:transform .2s,box-shadow .2s}
+  .btn-primary{background:linear-gradient(120deg,var(--rose-deep),var(--gold-deep));color:#fff;box-shadow:0 8px 22px rgba(184,149,79,.30)}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(184,149,79,.40)}
+  .btn-ghost{border:1.5px solid var(--gold);color:var(--gold-deep)}
+  .btn-ghost:hover{background:rgba(217,182,121,.14)}
+
+  /* étoiles dorées scintillantes */
+  .twinkle{position:absolute;color:var(--gold);opacity:.0;animation:tw 4s ease-in-out infinite;z-index:1;pointer-events:none}
+  @keyframes tw{0%,100%{opacity:.15;transform:scale(.85)}50%{opacity:.9;transform:scale(1.1)}}
+  @media(prefers-reduced-motion:reduce){.twinkle{animation:none;opacity:.4}}
+
+  .intro p{font-size:clamp(1.2rem,3vw,1.7rem);font-family:'Fraunces',serif;font-optical-sizing:none;line-height:1.5;color:var(--plum);max-width:24ch}
+  .intro .soft{color:var(--gold-deep)}
+
+  .propose .wrap{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,64px);align-items:center}
+  .propose-card{background:var(--cream);border-radius:26px;padding:clamp(28px,4vw,44px);box-shadow:0 18px 50px rgba(90,80,66,.08);border:1px solid rgba(217,182,121,.35);position:relative}
+  .propose-card::before{content:"✦";position:absolute;top:18px;right:22px;color:var(--gold);opacity:.5;font-size:1.1rem}
+  .propose h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.2rem}
+  .propose p+p{margin-top:1.1rem}
+  @media(max-width:760px){.propose .wrap{grid-template-columns:1fr}}
+
+  .pillars{background:linear-gradient(180deg,transparent,rgba(255,252,248,.8))}
+  .pillar-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,34px);margin-top:2.6rem}
+  .pillar{background:var(--cream);border-radius:22px;padding:clamp(24px,3vw,34px);border:1px solid rgba(217,182,121,.30);position:relative;overflow:hidden;transition:transform .3s,box-shadow .3s}
+  .pillar:hover{transform:translateY(-4px);box-shadow:0 16px 38px rgba(90,80,66,.12)}
+  .pillar .num{font-family:'Berkshire Swash',cursive;color:var(--gold-deep);font-size:2rem;line-height:1}
+  .pillar h3{font-size:1.4rem;margin:.4rem 0 .7rem;color:var(--rose-deep)}
+  .pillar p{font-size:1rem;color:var(--plum-soft);flex:1}
+  .pillar{display:flex;flex-direction:column}
+  .btn-soft{display:inline-block;align-self:flex-start;margin-top:1.2rem;position:relative;z-index:2;
+    text-decoration:none;font-weight:700;font-size:.88rem;letter-spacing:.03em;color:var(--leaf-deep);
+    border-bottom:1.5px solid var(--gold);padding-bottom:2px;transition:color .2s,border-color .2s}
+  .btn-soft:hover{color:var(--gold-deep);border-color:var(--leaf-deep)}
+  .pillar-leaf{position:absolute;right:-14px;bottom:-14px;opacity:.16}
+  @media(max-width:760px){.pillar-grid{grid-template-columns:1fr}}
+
+  .forwho .wrap{max-width:780px}
+  .forwho h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.6rem}
+  .level{display:flex;gap:1.2rem;padding:1.1rem 0;align-items:flex-start}
+  .level .tag{flex:none;font-family:'Fraunces',serif;font-optical-sizing:none;font-style:italic;color:var(--rose-deep);font-size:1.25rem;width:130px}
+  .level p{color:var(--plum-soft)}
+
+  .freins .wrap,.serenite .wrap{max-width:760px}
+  .freins h2,.serenite h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.4rem}
+  .freins ul{list-style:none;padding:0;margin:0 0 1.6rem}
+  .freins li{position:relative;padding-left:1.6rem;margin:.7rem 0;color:var(--plum-soft);line-height:1.7}
+  .freins li::before{content:"✦";position:absolute;left:0;color:var(--gold-deep)}
+  .freins .conclusion{font-family:'Fraunces',Georgia,serif;font-size:clamp(1.1rem,2.2vw,1.3rem);color:var(--rose-deep);line-height:1.6}
+  .regard-text{max-width:62ch;margin-top:1.2rem;color:var(--plum-soft)}
+  .regard-text p+p{margin-top:1rem}
+  .regard-grid{display:grid;grid-template-columns:1.1fr 1fr;gap:clamp(24px,4vw,48px);align-items:center;margin-top:1.2rem}
+  .regard-grid .regard-text{margin-top:0}
+  .regard-img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border-radius:28px;border:6px solid var(--cream);box-shadow:0 18px 44px rgba(126,148,120,.22)}
+  @media(max-width:760px){.regard-grid{grid-template-columns:1fr}}
+  .card-img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;margin-bottom:1rem;box-shadow:0 10px 26px rgba(126,148,120,.18)}
+  .shape-round{border-radius:20px}
+  .shape-oval{border-radius:50%}
+  .shape-arch{border-radius:999px 999px 18px 18px;aspect-ratio:4/3}
+  .shape-circle{width:72%;aspect-ratio:1;border-radius:50%;margin:0 auto 1rem}
+  .formats{margin-top:2.2rem;text-align:center;font-style:italic;color:var(--plum-soft)}
+  .serenite{background:radial-gradient(100% 80% at 0% 0%,rgba(217,182,121,.14),transparent 60%)}
+  .about .wrap{max-width:900px}
+  .about-grid{display:grid;grid-template-columns:230px 1fr;gap:clamp(24px,4vw,44px);align-items:start}
+  .about-grid p+p{margin-top:1rem}
+  .about-photo{width:100%;height:auto;aspect-ratio:4/5;object-fit:cover;object-position:50% 80%;border-radius:22px;box-shadow:0 14px 34px rgba(99,76,81,.16)}
+  @media(max-width:680px){.about-grid{grid-template-columns:1fr}.about-photo{max-width:240px;margin:0 auto}}
+  .temoignages .wrap{max-width:760px;text-align:center}
+  .temoignages h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1rem}
+  .temoignages p{color:var(--plum-soft);margin-bottom:1.6rem}
+  .about{background:radial-gradient(100% 80% at 100% 0%,rgba(217,182,121,.16),transparent 60%)}
+  .about .wrap{max-width:760px}
+  .about h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.4rem}
+  .about .placeholder{color:var(--plum-soft);font-style:italic;background:rgba(255,252,248,.7);border-left:3px solid var(--gold);padding:1rem 1.3rem;border-radius:0 14px 14px 0;margin-top:1.2rem;font-size:1rem}
+
+  .pricing .wrap{max-width:760px}
+  .pricing h2{font-size:clamp(1.8rem,4vw,2.6rem);margin-bottom:1.6rem}
+  .price-card{background:transparent;border-radius:22px;padding:clamp(20px,3vw,32px);border:1px solid rgba(217,182,121,.10);box-shadow:none}
+  .price-row{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding:1rem 0;border-bottom:1px dashed rgba(217,182,121,.20)}
+  .price-row:last-of-type{border-bottom:0}
+  .price-row .label{font-family:'Fraunces',serif;font-optical-sizing:none;font-size:1.2rem}
+  .price-row .amount{color:var(--gold-deep);font-weight:700;font-size:1.15rem;white-space:nowrap}
+  .price-note{margin-top:1.4rem;font-size:.95rem;color:var(--plum-soft);font-style:italic}
+  .dots{color:var(--gold);letter-spacing:.06em}
+
+  .contact{text-align:center;position:relative}
+  .contact .wrap{max-width:560px}
+  .contact h2{font-size:clamp(1.8rem,4vw,2.6rem);color:var(--leaf-deep);margin-bottom:1.1rem}
+  .contact .script-sub{font-family:'Berkshire Swash',cursive;font-size:1.6rem;color:var(--gold-deep);margin-bottom:.3rem}
+  .contact p{max-width:46ch;margin:0 auto 2rem;color:var(--plum-soft)}
+  /* CTA principal : unique, centré, plus généreux que les boutons courants */
+  .btn-cta{font-size:1.02rem;padding:1em 2.4em;letter-spacing:.01em}
+  .contact-reassure{margin-top:1rem!important;margin-bottom:0!important;font-size:.9rem;font-style:italic;color:var(--plum-soft);opacity:.85}
+  /* Contacts secondaires : liens typographiques discrets, dans la charte */
+  .contact-alt{margin-top:2.6rem;display:flex;gap:.75rem;justify-content:center;align-items:center;flex-wrap:wrap;font-size:.92rem;color:var(--plum-soft)}
+  .contact-alt-intro{opacity:.8}
+  .contact-alt a{color:var(--gold-deep);text-decoration:none;font-weight:600;border-bottom:1px solid rgba(217,182,121,.5);padding-bottom:1px;transition:color .2s,border-color .2s}
+  .contact-alt a:hover{color:var(--leaf-deep);border-color:var(--leaf-deep)}
+  .contact-alt .sep{color:var(--gold);opacity:.7}
+
+  footer{text-align:center;padding:34px 20px;font-size:.85rem;color:var(--plum-soft);border-top:1px solid rgba(217,182,121,.35)}
+  footer .brand{justify-content:center;color:var(--leaf-deep);margin-bottom:.4rem}
+  footer > div:last-child{max-width:46ch;margin:0 auto}
+
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .7s ease,transform .7s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+  @media(max-width:680px){
+    .nav-links{position:absolute;top:100%;right:0;left:0;flex-direction:column;gap:0;background:var(--blush);border-bottom:1px solid rgba(217,182,121,.3);max-height:0;overflow:hidden;transition:max-height .35s ease}
+    .nav-links.open{max-height:360px}
+    .nav-links li{padding:0 24px}
+    .nav-links a{display:block;padding:14px 0;border-bottom:1px solid rgba(217,182,121,.18)}
+    .nav-toggle{display:block}
+  }
+</style>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "ProfessionalService",
+ "name": "Graine de réussite",
+ "url": "https://blandinenorvege.github.io/atelier-de-blandine/graine-de-reussite",
+ "email": "blandine.cousin51@gmail.com",
+ "image": "https://blandinenorvege.github.io/atelier-de-blandine/images/portrait.jpg",
+ "description": "Accompagnement bienveillant pour apprendre autrement, avec la tête, le cœur et les mains, à Châlons-en-Champagne ou à distance.",
+ "address": {
+  "@type": "PostalAddress",
+  "addressLocality": "Châlons-en-Champagne",
+  "addressCountry": "FR"
+ },
+ "areaServed": "Châlons-en-Champagne",
+ "priceRange": "25 € la séance d'1 h",
+ "founder": {
+  "@type": "Person",
+  "name": "Blandine",
+  "jobTitle": "Enseignante d'anglais"
+ },
+ "parentOrganization": {
+  "@type": "Organization",
+  "name": "L'Atelier de Blandine",
+  "url": "https://blandinenorvege.github.io/atelier-de-blandine/"
+ }
+}
+</script>
+<link rel="icon" type="image/png" sizes="48x48" href="images/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/icon-180.png">
+</head>
+<body>
+<div class="stem"><div class="stem-line" id="stemLine"></div></div>
+
+<nav>
+  <div class="brand">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+      <path d="M12 22V11" stroke="#6F8E72" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M12 13C12 9 9 7 5 7c0 4 3 6 7 6Z" fill="#9FB69A"/>
+      <path d="M12 11c0-3.5 2.6-5.5 6-5.5 0 3.6-2.7 5.5-6 5.5Z" fill="#9FB69A"/>
+    </svg>
+    Graine de réussite
+  </div>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
+  <ul class="nav-links" id="navlinks">
+    <li><a href="#parcours">Mes parcours</a></li>
+    <li><a href="#tarifs">Tarifs</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="https://vibrharmony.fr/">✦ Vibr'harmony</a></li>
+    <li><a href="index.html">🏠 L'Atelier de Blandine</a></li>
+  </ul>
+</nav>
+
+<header class="hero" id="accueil">
+  <div class="band-logo reveal">
+    <h1 class="band-name" style="margin:0">Graine de réussite</h1>
+    <div class="band-tag">✦ Du plaisir d'apprendre à la confiance retrouvée ✦</div>
+  </div>
+  <div class="band-sub reveal">Apprendre à sa façon, avec la tête, le cœur et les mains</div>
+  <div class="intro-editorial intro-with-img">
+    <img class="intro-img reveal" src="images/graine-pousse.jpg" alt="Mains d'enfant tenant une jeune pousse dans un peu de terre" width="1264" height="848">
+    <p class="intro-text reveal">Chaque enfant porte en lui des graines prêtes à germer : ses élans, ses curiosités, sa façon unique de comprendre le monde. Mon rôle est de leur offrir le bon terreau, pour qu'elles puissent éclore à son rythme, dans la confiance et la joie.</p>
+  </div>
+</header>
+
+<section class="freins" id="freins">
+  <div class="wrap reveal">
+    <h2>Ce qui freine parfois l'envie d'apprendre</h2>
+    <ul>
+      <li>Les devoirs s'éternisent et finissent en larmes ou en disputes.</li>
+      <li>Il connaît sa leçon… mais panique le jour du contrôle.</li>
+      <li>Il répète qu'il est « nul » et n'ose plus essayer.</li>
+      <li>Il a du mal à se concentrer, à s'organiser, à savoir par où commencer.</li>
+      <li>Il a perdu le goût d'apprendre et se décourage vite.</li>
+      <li>Il aurait simplement besoin d'un autre regard que celui de l'école.</li>
+    </ul>
+    <p class="conclusion">Ces difficultés ne disent rien de ses capacités. Elles disent souvent qu'il a besoin d'être rassuré, et d'apprendre autrement.</p>
+  </div>
+</section>
+
+<section class="pillars" id="approche">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Mon regard</div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Trois racines, un même élan</h2>
+      <div class="regard-grid">
+      <div class="regard-text">
+        <p>On apprend vraiment quand on se sent en sécurité, quand quelque chose nous touche, quand on a le droit d'essayer et de se tromper.</p>
+        <p>Je ne suis pas là pour remplir des têtes, mais pour accompagner un élan. J'observe ce qui anime l'enfant, je pars de ce qu'il aime et je l'aide à trouver ses propres chemins. Je guide, je propose, j'encourage. C'est lui qui avance.</p>
+      </div>
+      <img class="regard-img" src="images/graine-regard.jpg" alt="Une femme et une adolescente qui échangent un regard complice à une table" width="1264" height="848" loading="lazy">
+      </div>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <div class="num">✦</div>
+        <h3>Bienveillance</h3>
+        <p>Ici, l'erreur n'est pas un échec, mais une étape. On avance sans jugement, à son rythme.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <div class="num">✦</div>
+        <h3>Confiance</h3>
+        <p>Pas à pas, retrouver le goût de comprendre et le sentiment d'en être capable.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <div class="num">✦</div>
+        <h3>Épanouissement</h3>
+        <p>Faire grandir l'envie, la curiosité et le plaisir d'apprendre, pour s'épanouir au-delà des notes.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="forwho" id="ages">
+  <div class="wrap reveal">
+    <div class="eyebrow">Selon l'âge</div>
+    <h2>À chaque âge, sa façon d'apprendre</h2>
+    <div class="level">
+      <div class="tag">Les petits</div>
+      <p>Ils apprennent en jouant, en imitant, en touchant. On manipule, on chante, on raconte, on bouge. Le plaisir d'abord.</p>
+    </div>
+    <div class="level">
+      <div class="tag">De 7 à 12 ans</div>
+      <p>C'est l'âge des images et des histoires. On apprend par le récit, le dessin, le rythme et la nature. Ce qui est vécu et ressenti se retient bien mieux.</p>
+    </div>
+    <div class="level">
+      <div class="tag">Les ados</div>
+      <p>C'est le temps de penser par soi-même. On part de leurs questions et de leurs projets pour donner du sens. Ils apprennent à s'organiser et à se faire confiance.</p>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" id="parcours">
+  <div class="wrap">
+    <div class="reveal">
+      <div class="eyebrow">Mes parcours</div>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <img class="card-img shape-circle" src="images/graine-eclosion.jpg" alt="Adolescent qui dessine une carte mentale colorée" width="1264" height="848" loading="lazy" style="object-position:33% 45%">
+        <div class="num">✦</div>
+        <h3>Éclosion · Apprendre à apprendre</h3>
+        <p>Comprendre comment on mémorise, comment on se concentre, comment on s'organise. Les devoirs et les leçons deviennent un terrain d'expérience, où l'erreur est une étape et non une faute.</p>
+        <a class="btn-soft" href="eclosion.html">En savoir plus →</a>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-arch" src="images/graine-projet.jpg" alt="Enfant assis parmi ses dessins, qui montre des planètes suspendues" width="1264" height="848" loading="lazy" style="object-position:55% 40%">
+        <div class="num">✦</div>
+        <h3>Le projet qui me passionne</h3>
+        <p>L'espace, les chevaux, la musique, un jeu vidéo… Ce qui passionne votre enfant devient une porte d'entrée pour lire, écrire, compter, chercher et créer. Au bout, il y a une vraie réalisation : un carnet, un exposé, un petit livre.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-oval" src="images/graine-calme.jpg" alt="Adolescente assise en tailleur, les yeux fermés, une main sur le cœur" width="1264" height="848" loading="lazy" style="object-position:48% 40%">
+        <div class="num">✦</div>
+        <h3>Mon calme intérieur</h3>
+        <p>Respirer, observer ce qui se passe en soi, accueillir une émotion sans s'y noyer, cultiver la gratitude, écouter sa petite voix. Ce sont des outils simples qu'il pourra utiliser seul, à la maison comme en classe.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-circle" src="images/graine-dehors.jpg" alt="Deux enfants qui observent une feuille à la loupe dans un jardin" width="1264" height="848" loading="lazy" style="object-position:45% 45%">
+        <div class="num">✦</div>
+        <h3>Apprendre dehors</h3>
+        <p>Apprendre dans la nature, en marchant, en observant, en touchant. Le grand air apaise, éveille la curiosité et rend les apprentissages vivants.</p>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-round" src="images/graine-anglais.jpg" alt="Enfants et adolescents qui jouent aux cartes en riant autour d'une table" width="1264" height="848" loading="lazy" style="object-position:50% 50%">
+        <div class="num">✦</div>
+        <h3>Anglais &amp; Aisance</h3>
+        <p>Des chansons, des histoires, des jeux. L'anglais se vit avant de s'apprendre, et le plaisir de communiquer passe avant la performance.</p>
+        <a class="btn-soft" href="anglais-aisance.html">En savoir plus →</a>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-oval" src="images/graine-parents.jpg" alt="Un couple et leur enfant qui rient ensemble autour d'un cahier" width="1264" height="848" loading="lazy" style="object-position:55% 45%">
+        <div class="num">✦</div>
+        <h3>Parents &amp; Enfants</h3>
+        <p>Des outils concrets pour des moments d'apprentissage apaisés à la maison. C'est aussi un espace d'écoute pour vos questions de parent : vos doutes, vos choix, ce qui vous semble juste pour votre enfant.</p>
+        <a class="btn-soft" href="parents-enfants.html">En savoir plus →</a>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
+      </div>
+    </div>
+    <p class="formats reveal">Les séances se vivent en individuel ou en petit groupe, en présentiel ou à distance, selon ce qui convient le mieux à votre enfant.</p>
+  </div>
+</section>
+
+<section class="about" id="apropos">
+  <div class="wrap reveal">
+    <div class="eyebrow">À propos</div>
+    <h2>Qui je suis</h2>
+    <div class="about-grid">
+      <img class="about-photo" src="images/portrait.jpg" alt="Portrait de Blandine, fondatrice de Graine de réussite" width="900" height="1200" loading="lazy">
+      <div>
+    <p>Enseignante d'anglais en lycée professionnel depuis plus de vingt-cinq ans, je sais combien les jeunes ont besoin d'être écoutés et accompagnés, pas seulement évalués.</p>
+    <p>Trop d'élèves perdent confiance en cours de route. Pas par manque de capacités, mais parce qu'ils ne se sentent ni compris ni soutenus. En classe, le temps manque pour leur offrir cette écoute. C'est pour ça que j'ai créé <em>Graine de réussite</em>.</p>
+    <p>Ici, on apprend autrement. Par le plaisir, la curiosité, la confiance. Sans la peur de se tromper. Je m'inspire de pédagogies qui placent le jeune et son épanouissement au cœur de l'apprentissage, comme Montessori, Steiner, Freinet, l'école du dehors ou les apprentissages libres, et qui respectent le rythme, la créativité et la sensibilité de chacun. Parce qu'on ne se résume jamais à ses notes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="temoignages" id="temoignages">
+  <div class="wrap reveal">
+    <h2>Témoignages</h2>
+    <p>Votre enfant a été accompagné ? Votre retour peut aider d'autres parents à faire le premier pas.</p>
+    <a href="mailto:blandine.cousin51@gmail.com?subject=Mon%20t%C3%A9moignage%20-%20Graine%20de%20r%C3%A9ussite" class="btn btn-primary">Partager mon témoignage</a>
+  </div>
+</section>
+
+<section class="pricing" id="tarifs">
+  <div class="wrap reveal">
+    <div class="eyebrow">Tarifs</div>
+    <div class="price-card">
+      <div class="price-row"><span class="label">Séance découverte (15-20 min)</span><span class="amount">Offerte</span></div>
+      <div class="price-row"><span class="label">Séance individuelle (1 h)</span><span class="amount">25 €</span></div>
+      <div class="price-row"><span class="label">Atelier en petit groupe</span><span class="amount">À définir</span></div>
+      <p class="price-note">✦ N'hésitez pas à m'en parler : il est toujours possible de s'arranger selon votre situation.</p>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <span class="twinkle" style="top:20%;left:14%;font-size:1.3rem">✦</span>
+  <span class="twinkle" style="top:66%;right:18%;font-size:1.6rem;animation-delay:1.4s">✦</span>
+  <div class="wrap reveal">
+    <div class="script-sub">Faisons connaissance</div>
+    <h2>Un premier pas, tout en douceur</h2>
+    <p>Vous souhaitez en savoir plus, ou voir si nous pourrions cheminer ensemble ? Je vous propose un premier échange, sans engagement, pour faire connaissance et comprendre les besoins de votre enfant.</p>
+
+    <a href="mailto:blandine.cousin51@gmail.com?subject=Premier%20échange%20-%20Graine%20de%20réussite" class="btn btn-primary btn-cta">Réserver notre premier échange</a>
+
+    <p class="contact-reassure">Sans engagement, et toujours offert.</p>
+
+    <div class="contact-alt">
+      <span class="contact-alt-intro">Vous préférez écrire&nbsp;?</span>
+      <a href="mailto:blandine.cousin51@gmail.com">Par e-mail</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="brand" style="display:inline-flex">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+      <path d="M12 22V11" stroke="#7E9478" stroke-width="1.8" stroke-linecap="round"/>
+      <path d="M12 13C12 9 9 7 5 7c0 4 3 6 7 6Z" fill="#9FB69A"/>
+      <path d="M12 11c0-3.5 2.6-5.5 6-5.5 0 3.6-2.7 5.5-6 5.5Z" fill="#D9B679"/>
+    </svg>
+    Graine de réussite
+  </div>
+  <div>Apprendre autrement : du plaisir d'apprendre à la confiance retrouvée</div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.14});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+  const stem=document.getElementById('stemLine');
+  function grow(){const h=document.documentElement;const p=h.scrollTop/(h.scrollHeight-h.clientHeight);stem.style.height=(p*100)+'%'}
+  window.addEventListener('scroll',grow,{passive:true});grow();
+  document.querySelectorAll('#navlinks a').forEach(a=>a.addEventListener('click',()=>{document.getElementById('navlinks').classList.remove('open')}));
+</script>
+</body>
+</html>

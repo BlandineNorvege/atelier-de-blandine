@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>L'Atelier de Blandine · Bien-être et apprendre autrement à Châlons</title>
+<meta name="description" content="Vibr&#x27;harmony pour l&#x27;équilibre intérieur, Graine de réussite pour apprendre autrement : l&#x27;accompagnement des petits et des grands, à Châlons-en-Champagne.">
+<link rel="canonical" href="https://blandinenorvege.github.io/atelier-de-blandine/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:site_name" content="L&#x27;Atelier de Blandine">
+<meta property="og:title" content="L&#x27;Atelier de Blandine · Bien-être et apprendre autrement à Châlons">
+<meta property="og:description" content="Vibr&#x27;harmony pour l&#x27;équilibre intérieur, Graine de réussite pour apprendre autrement : l&#x27;accompagnement des petits et des grands, à Châlons-en-Champagne.">
+<meta property="og:url" content="https://blandinenorvege.github.io/atelier-de-blandine/">
+<meta property="og:image" content="https://blandinenorvege.github.io/atelier-de-blandine/images/portrait.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Nunito+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Berkshire+Swash&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blush:#FCEFF1;
+    --rose:#E8A6B0;
+    --rose-deep:#C77685;
+    --plum:#5E3A44;
+    --plum-soft:#7C5A63;
+    --leaf:#9FB69A;
+    --leaf-deep:#6F8E72;
+    --cream:#FFFAF7;
+    --gold:#D9B679;
+    --gold-deep:#B8954F;
+    --maxw:1080px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:'Nunito Sans',system-ui,sans-serif;color:var(--plum);line-height:1.75;font-size:18px;
+    -webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh;
+    display:flex;flex-direction:column;
+    background:
+      radial-gradient(circle at 12% 10%,rgba(232,166,176,.35),transparent 26%),
+      radial-gradient(circle at 88% 16%,rgba(217,182,121,.28),transparent 28%),
+      radial-gradient(circle at 20% 88%,rgba(159,182,154,.22),transparent 26%),
+      radial-gradient(circle at 85% 90%,rgba(232,166,176,.25),transparent 26%),
+      linear-gradient(175deg,#FDF5F2,#FBECEE 55%,#FCEEE8);
+    background-attachment:fixed;
+  }
+  h1,h2,h3{font-family:'Fraunces',Georgia,serif;font-weight:400;line-height:1.15;letter-spacing:-.01em}
+  .script{font-family:'Berkshire Swash',cursive;font-weight:400}
+  em{font-style:italic}
+  a{color:inherit}
+
+  main{flex:1;display:flex;flex-direction:column;justify-content:center;padding:clamp(48px,9vh,90px) clamp(20px,6vw,56px)}
+  .wrap{max-width:var(--maxw);margin:0 auto;width:100%;text-align:center}
+
+  .hero .name{
+    font-family:'Berkshire Swash',cursive;font-size:clamp(2.6rem,8vw,4.6rem);line-height:1.05;margin-bottom:1.1rem;
+    background:linear-gradient(95deg,var(--gold-deep),var(--rose-deep) 55%,var(--leaf-deep));
+    -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  }
+  .hero .tagline{
+    font-family:'Fraunces',Georgia,serif;font-style:italic;font-size:clamp(1.2rem,3vw,1.6rem);
+    color:var(--plum-soft);max-width:52ch;margin:0 auto 3.6rem;line-height:1.5;
+  }
+
+  .doors{display:grid;grid-template-columns:1fr 1fr;gap:clamp(22px,3.4vw,36px);max-width:920px;margin:0 auto}
+  .door{
+    position:relative;text-align:left;padding:clamp(30px,4vw,44px) clamp(26px,3.4vw,36px);border-radius:26px;
+    background:rgba(255,255,255,.55);backdrop-filter:blur(6px);
+    box-shadow:0 16px 42px rgba(94,58,68,.1);
+    transition:transform .3s ease,box-shadow .3s ease;
+    display:flex;flex-direction:column;gap:1.1rem;
+  }
+  .door:hover{transform:translateY(-6px);box-shadow:0 24px 54px rgba(94,58,68,.16)}
+  .door.vibr{border:1px solid rgba(199,118,133,.35)}
+  .door.graine{border:1px solid rgba(111,142,114,.35)}
+
+  .ic-img{width:100%;max-width:220px;aspect-ratio:4/3;object-fit:cover;border-radius:18px;align-self:center;box-shadow:0 10px 26px rgba(94,58,68,.12)}
+
+  .door h2{font-size:clamp(1.5rem,3vw,1.9rem)}
+  .door.vibr h2{color:var(--rose-deep)}
+  .door.graine h2{color:var(--leaf-deep)}
+
+  .door p{color:var(--plum-soft);font-size:1rem;flex:1}
+
+  .btn{
+    display:inline-block;align-self:flex-start;text-decoration:none;font-weight:700;font-size:.92rem;
+    letter-spacing:.03em;padding:.85em 1.9em;border-radius:40px;border:none;cursor:pointer;color:#fff;
+    transition:transform .2s,box-shadow .2s;
+  }
+  .door.vibr .btn{background:linear-gradient(120deg,var(--rose-deep),var(--gold-deep));box-shadow:0 8px 22px rgba(199,118,133,.32)}
+  .door.graine .btn{background:linear-gradient(120deg,var(--leaf-deep),var(--gold-deep));box-shadow:0 8px 22px rgba(111,142,114,.3)}
+  .btn:hover{transform:translateY(-2px)}
+
+  @media(max-width:760px){
+    .doors{grid-template-columns:1fr}
+    .door{text-align:center;align-items:center}
+    .btn{align-self:center}
+  }
+
+  footer{
+    text-align:center;padding:32px 20px 38px;font-size:.9rem;color:var(--plum-soft);
+    border-top:1px solid rgba(217,182,121,.3);
+  }
+  footer .brand{font-family:'Berkshire Swash',cursive;font-size:1.3rem;color:var(--rose-deep);margin-bottom:.5rem}
+  footer .coords{display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;margin-top:.4rem}
+  footer .coords a{text-decoration:none;color:var(--plum-soft);transition:color .2s}
+  footer .coords a:hover{color:var(--gold-deep)}
+  footer .coords a.wa{background:#25D366;color:#fff;padding:.4em 1.1em;border-radius:30px;font-weight:700;font-size:.85rem}
+  footer .coords a.wa:hover{color:#fff;filter:brightness(1.05)}
+
+  .reveal{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+<link rel="icon" type="image/png" sizes="48x48" href="images/icon-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/icon-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/icon-192.png">
+<link rel="apple-touch-icon" href="images/icon-180.png">
+</head>
+<body>
+
+<main>
+  <div class="wrap">
+    <div class="hero reveal">
+      <h1 class="name" style="margin-top:0">L'Atelier de Blandine</h1>
+      <p class="tagline">L'accompagnement de l'être dans sa globalité, pour petits et grands, pour apprendre avec confiance et s'épanouir en douceur.</p>
+    </div>
+
+    <div class="doors">
+      <div class="door vibr reveal">
+        <img class="ic-img" src="data:image/jpeg;base64,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" alt="Bol tibétain" loading="lazy">
+        <h2>Vibr'harmony</h2>
+        <p>Retrouver son équilibre intérieur grâce à l'écoute bienveillante et à l'accompagnement des émotions et du système nerveux.</p>
+        <a class="btn" href="https://vibrharmony.fr/">Découvrir Vibr'harmony</a>
+      </div>
+
+      <div class="door graine reveal">
+        <img class="ic-img" src="images/graine-pousse.jpg" alt="Mains d'enfant tenant une jeune pousse" loading="lazy">
+        <h2>Graine de réussite</h2>
+        <p>Apprendre autrement, avec la tête, le cœur et les mains : un accompagnement bienveillant pour retrouver le plaisir d'apprendre et la confiance.</p>
+        <a class="btn" href="graine-de-reussite.html">Découvrir Graine de réussite</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <div class="brand">L'Atelier de Blandine</div>
+  <div class="coords">
+    <a href="mailto:blandine.cousin51@gmail.com">✉ blandine.cousin51@gmail.com</a>
+  </div>
+</footer>
+
+<script>
+  const io=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>

@@ -148,6 +148,9 @@
   .shape-oval{border-radius:50%}
   .shape-arch{border-radius:999px 999px 18px 18px;aspect-ratio:4/3}
   .shape-circle{width:72%;aspect-ratio:1;border-radius:50%;margin:0 auto 1rem}
+  .racines-title{font-size:clamp(1.4rem,3vw,1.8rem);color:var(--leaf-deep);margin-top:3.2rem}
+  .racines-title+.pillar-grid{margin-top:1.4rem}
+  .parcours-intro{max-width:62ch;margin-top:1rem;color:var(--plum-soft)}
   .formats{margin-top:2.2rem;text-align:center;font-style:italic;color:var(--plum-soft)}
   .serenite{background:radial-gradient(100% 80% at 0% 0%,rgba(217,182,121,.14),transparent 60%)}
   .about .wrap{max-width:900px}
@@ -289,8 +292,7 @@
 <section class="pillars" id="approche">
   <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow">Mon regard</div>
-      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Trois racines, un même élan</h2>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mon regard</h2>
       <div class="regard-grid">
       <div class="regard-text">
         <p>On apprend vraiment quand on se sent en sécurité, quand quelque chose nous touche, quand on a le droit d'essayer et de se tromper.</p>
@@ -299,6 +301,7 @@
       <img class="regard-img" src="images/graine-regard.jpg" alt="Une femme et une adolescente qui échangent un regard complice à une table" width="1264" height="848" loading="lazy">
       </div>
     </div>
+    <h3 class="racines-title reveal">Trois racines, un même élan</h3>
     <div class="pillar-grid">
       <div class="pillar reveal">
         <div class="num">✦</div>
@@ -344,12 +347,12 @@
 <section class="pillars" id="parcours">
   <div class="wrap">
     <div class="reveal">
-      <div class="eyebrow">Mes parcours</div>
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mes parcours</h2>
+      <p class="parcours-intro">Six chemins pour apprendre autrement. Ils peuvent se vivre séparément ou se combiner, selon ce dont votre enfant a besoin.</p>
     </div>
     <div class="pillar-grid">
       <div class="pillar reveal">
         <img class="card-img shape-circle" src="images/graine-eclosion.jpg" alt="Adolescent qui dessine une carte mentale colorée" width="1264" height="848" loading="lazy" style="object-position:33% 45%">
-        <div class="num">✦</div>
         <h3>Éclosion · Apprendre à apprendre</h3>
         <p>Comprendre comment on mémorise, comment on se concentre, comment on s'organise. Les devoirs et les leçons deviennent un terrain d'expérience, où l'erreur est une étape et non une faute.</p>
         <a class="btn-soft" href="eclosion.html">En savoir plus →</a>
@@ -357,28 +360,24 @@
       </div>
       <div class="pillar reveal">
         <img class="card-img shape-arch" src="images/graine-projet.jpg" alt="Enfant assis parmi ses dessins, qui montre des planètes suspendues" width="1264" height="848" loading="lazy" style="object-position:55% 40%">
-        <div class="num">✦</div>
         <h3>Le projet qui me passionne</h3>
         <p>L'espace, les chevaux, la musique, un jeu vidéo… Ce qui passionne votre enfant devient une porte d'entrée pour lire, écrire, compter, chercher et créer. Au bout, il y a une vraie réalisation : un carnet, un exposé, un petit livre.</p>
         <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
       </div>
       <div class="pillar reveal">
         <img class="card-img shape-oval" src="images/graine-calme.jpg" alt="Adolescente assise en tailleur, les yeux fermés, une main sur le cœur" width="1264" height="848" loading="lazy" style="object-position:48% 40%">
-        <div class="num">✦</div>
         <h3>Mon calme intérieur</h3>
         <p>Respirer, observer ce qui se passe en soi, accueillir une émotion sans s'y noyer, cultiver la gratitude, écouter sa petite voix. Ce sont des outils simples qu'il pourra utiliser seul, à la maison comme en classe.</p>
         <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
       </div>
       <div class="pillar reveal">
         <img class="card-img shape-circle" src="images/graine-dehors.jpg" alt="Deux enfants qui observent une feuille à la loupe dans un jardin" width="1264" height="848" loading="lazy" style="object-position:45% 45%">
-        <div class="num">✦</div>
         <h3>Apprendre dehors</h3>
         <p>Apprendre dans la nature, en marchant, en observant, en touchant. Le grand air apaise, éveille la curiosité et rend les apprentissages vivants.</p>
         <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
       </div>
       <div class="pillar reveal">
         <img class="card-img shape-round" src="images/graine-anglais.jpg" alt="Enfants et adolescents qui jouent aux cartes en riant autour d'une table" width="1264" height="848" loading="lazy" style="object-position:50% 50%">
-        <div class="num">✦</div>
         <h3>Anglais &amp; Aisance</h3>
         <p>Des chansons, des histoires, des jeux. L'anglais se vit avant de s'apprendre, et le plaisir de communiquer passe avant la performance.</p>
         <a class="btn-soft" href="anglais-aisance.html">En savoir plus →</a>
@@ -386,7 +385,6 @@
       </div>
       <div class="pillar reveal">
         <img class="card-img shape-oval" src="images/graine-parents.jpg" alt="Un couple et leur enfant qui rient ensemble autour d'un cahier" width="1264" height="848" loading="lazy" style="object-position:55% 45%">
-        <div class="num">✦</div>
         <h3>Parents &amp; Enfants</h3>
         <p>Des outils concrets pour des moments d'apprentissage apaisés à la maison. C'est aussi un espace d'écoute pour vos questions de parent : vos doutes, vos choix, ce qui vous semble juste pour votre enfant.</p>
         <a class="btn-soft" href="parents-enfants.html">En savoir plus →</a>

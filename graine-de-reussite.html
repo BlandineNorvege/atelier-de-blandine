@@ -151,6 +151,19 @@
   .racines-title{font-size:clamp(1.4rem,3vw,1.8rem);color:var(--leaf-deep);margin-top:3.2rem}
   .racines-title+.pillar-grid{margin-top:1.4rem}
   .parcours-intro{max-width:62ch;margin-top:1rem;color:var(--plum-soft)}
+  .racines{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,48px);margin-top:1.4rem}
+  .racine .num{font-family:'Berkshire Swash',cursive;color:var(--gold-deep);font-size:1.6rem;line-height:1}
+  .racine h3{font-size:1.35rem;margin:.3rem 0 .5rem;color:var(--rose-deep)}
+  .racine p{font-size:1rem;color:var(--plum-soft)}
+  .seances .wrap{max-width:960px}
+  .seances h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+  .seance{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:clamp(24px,5vw,56px);align-items:center;margin-top:clamp(36px,6vw,64px)}
+  .seance:nth-of-type(odd) .seance-img{order:2}
+  .seance-img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;border:6px solid var(--cream);box-shadow:0 18px 44px rgba(126,148,120,.22)}
+  .seance-img.shape-circle{aspect-ratio:1;max-width:320px;justify-self:center}
+  .seance h3{font-size:1.5rem;color:var(--rose-deep);margin-bottom:.6rem}
+  .seance p{color:var(--plum-soft)}
+  @media(max-width:760px){.racines{grid-template-columns:1fr}.seance{grid-template-columns:1fr}.seance:nth-of-type(odd) .seance-img{order:0}}
   .formats{margin-top:2.2rem;text-align:center;font-style:italic;color:var(--plum-soft)}
   .serenite{background:radial-gradient(100% 80% at 0% 0%,rgba(217,182,121,.14),transparent 60%)}
   .about .wrap{max-width:900px}
@@ -254,7 +267,7 @@
   </div>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('navlinks').classList.toggle('open')">☰</button>
   <ul class="nav-links" id="navlinks">
-    <li><a href="#parcours">Mes parcours</a></li>
+    <li><a href="#parcours">Mes accompagnements</a></li>
     <li><a href="#tarifs">Tarifs</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="https://vibrharmony.fr/">✦ Vibr'harmony</a></li>
@@ -302,24 +315,83 @@
       </div>
     </div>
     <h3 class="racines-title reveal">Trois racines, un même élan</h3>
-    <div class="pillar-grid">
-      <div class="pillar reveal">
+    <div class="racines reveal">
+      <div class="racine">
         <div class="num">✦</div>
         <h3>Bienveillance</h3>
         <p>Ici, l'erreur n'est pas un échec, mais une étape. On avance sans jugement, à son rythme.</p>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
       </div>
-      <div class="pillar reveal">
+      <div class="racine">
         <div class="num">✦</div>
         <h3>Confiance</h3>
         <p>Pas à pas, retrouver le goût de comprendre et le sentiment d'en être capable.</p>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
       </div>
-      <div class="pillar reveal">
+      <div class="racine">
         <div class="num">✦</div>
         <h3>Épanouissement</h3>
         <p>Faire grandir l'envie, la curiosité et le plaisir d'apprendre, pour s'épanouir au-delà des notes.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pillars" id="parcours">
+  <div class="wrap">
+    <div class="reveal">
+      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mes accompagnements</h2>
+      <p class="parcours-intro">Trois façons de cheminer ensemble, en individuel ou en petit groupe, en présentiel ou à distance.</p>
+    </div>
+    <div class="pillar-grid">
+      <div class="pillar reveal">
+        <img class="card-img shape-circle" src="images/graine-eclosion.jpg" alt="Adolescent qui dessine une carte mentale colorée" width="1264" height="848" loading="lazy" style="object-position:33% 45%">
+        <h3>Éclosion · Apprendre à apprendre</h3>
+        <p>Comprendre comment on mémorise, comment on se concentre, comment on s'organise. Les devoirs et les leçons deviennent un terrain d'expérience, où l'erreur est une étape et non une faute.</p>
+        <a class="btn-soft" href="eclosion.html">En savoir plus →</a>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-oval" src="images/graine-parents.jpg" alt="Un couple et leur enfant qui rient ensemble autour d'un cahier" width="1264" height="848" loading="lazy" style="object-position:55% 45%">
+        <h3>Parents &amp; Enfants</h3>
+        <p>Des outils concrets pour des moments d'apprentissage apaisés à la maison. C'est aussi un espace d'écoute pour vos questions de parent : vos doutes, vos choix, ce qui vous semble juste pour votre enfant.</p>
+        <a class="btn-soft" href="parents-enfants.html">En savoir plus →</a>
         <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
+      </div>
+      <div class="pillar reveal">
+        <img class="card-img shape-round" src="images/graine-anglais.jpg" alt="Enfants et adolescents qui jouent aux cartes en riant autour d'une table" width="1264" height="848" loading="lazy" style="object-position:50% 50%">
+        <h3>Anglais &amp; Aisance</h3>
+        <p>Des chansons, des histoires, des jeux. L'anglais se vit avant de s'apprendre, et le plaisir de communiquer passe avant la performance.</p>
+        <a class="btn-soft" href="anglais-aisance.html">En savoir plus →</a>
+        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seances" id="seances">
+  <div class="wrap">
+    <div class="reveal">
+      <h2>Au fil des séances</h2>
+      <p class="parcours-intro">Selon votre enfant, son âge et ce qui l'anime, j'enrichis chaque accompagnement de ces approches.</p>
+    </div>
+    <div class="seance reveal">
+      <img class="seance-img shape-arch" src="images/graine-projet.jpg" alt="Enfant assis parmi ses dessins, qui montre des planètes suspendues" width="1264" height="848" loading="lazy" style="object-position:55% 40%">
+      <div>
+        <h3>Le projet qui me passionne</h3>
+        <p>L'espace, les chevaux, la musique, un jeu vidéo… Ce qui passionne votre enfant devient une porte d'entrée pour lire, écrire, compter, chercher et créer. Au bout, il y a une vraie réalisation : un carnet, un exposé, un petit livre.</p>
+      </div>
+    </div>
+    <div class="seance reveal">
+      <img class="seance-img shape-oval" src="images/graine-calme.jpg" alt="Adolescente assise en tailleur, les yeux fermés, une main sur le cœur" width="1264" height="848" loading="lazy" style="object-position:48% 40%">
+      <div>
+        <h3>Mon calme intérieur</h3>
+        <p>Respirer, observer ce qui se passe en soi, accueillir une émotion sans s'y noyer, cultiver la gratitude, écouter sa petite voix. Ce sont des outils simples qu'il pourra utiliser seul, à la maison comme en classe.</p>
+      </div>
+    </div>
+    <div class="seance reveal">
+      <img class="seance-img shape-circle" src="images/graine-dehors.jpg" alt="Deux enfants qui observent une feuille à la loupe dans un jardin" width="1264" height="848" loading="lazy" style="object-position:45% 45%">
+      <div>
+        <h3>Apprendre dehors</h3>
+        <p>Apprendre dans la nature, en marchant, en observant, en touchant. Le grand air apaise, éveille la curiosité et rend les apprentissages vivants.</p>
       </div>
     </div>
   </div>
@@ -341,57 +413,6 @@
       <div class="tag">Les ados</div>
       <p>C'est le temps de penser par soi-même. On part de leurs questions et de leurs projets pour donner du sens. Ils apprennent à s'organiser et à se faire confiance.</p>
     </div>
-  </div>
-</section>
-
-<section class="pillars" id="parcours">
-  <div class="wrap">
-    <div class="reveal">
-      <h2 style="font-size:clamp(1.8rem,4vw,2.6rem)">Mes parcours</h2>
-      <p class="parcours-intro">Six chemins pour apprendre autrement. Ils peuvent se vivre séparément ou se combiner, selon ce dont votre enfant a besoin.</p>
-    </div>
-    <div class="pillar-grid">
-      <div class="pillar reveal">
-        <img class="card-img shape-circle" src="images/graine-eclosion.jpg" alt="Adolescent qui dessine une carte mentale colorée" width="1264" height="848" loading="lazy" style="object-position:33% 45%">
-        <h3>Éclosion · Apprendre à apprendre</h3>
-        <p>Comprendre comment on mémorise, comment on se concentre, comment on s'organise. Les devoirs et les leçons deviennent un terrain d'expérience, où l'erreur est une étape et non une faute.</p>
-        <a class="btn-soft" href="eclosion.html">En savoir plus →</a>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
-      </div>
-      <div class="pillar reveal">
-        <img class="card-img shape-arch" src="images/graine-projet.jpg" alt="Enfant assis parmi ses dessins, qui montre des planètes suspendues" width="1264" height="848" loading="lazy" style="object-position:55% 40%">
-        <h3>Le projet qui me passionne</h3>
-        <p>L'espace, les chevaux, la musique, un jeu vidéo… Ce qui passionne votre enfant devient une porte d'entrée pour lire, écrire, compter, chercher et créer. Au bout, il y a une vraie réalisation : un carnet, un exposé, un petit livre.</p>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
-      </div>
-      <div class="pillar reveal">
-        <img class="card-img shape-oval" src="images/graine-calme.jpg" alt="Adolescente assise en tailleur, les yeux fermés, une main sur le cœur" width="1264" height="848" loading="lazy" style="object-position:48% 40%">
-        <h3>Mon calme intérieur</h3>
-        <p>Respirer, observer ce qui se passe en soi, accueillir une émotion sans s'y noyer, cultiver la gratitude, écouter sa petite voix. Ce sont des outils simples qu'il pourra utiliser seul, à la maison comme en classe.</p>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
-      </div>
-      <div class="pillar reveal">
-        <img class="card-img shape-circle" src="images/graine-dehors.jpg" alt="Deux enfants qui observent une feuille à la loupe dans un jardin" width="1264" height="848" loading="lazy" style="object-position:45% 45%">
-        <h3>Apprendre dehors</h3>
-        <p>Apprendre dans la nature, en marchant, en observant, en touchant. Le grand air apaise, éveille la curiosité et rend les apprentissages vivants.</p>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#9FB69A"/></svg>
-      </div>
-      <div class="pillar reveal">
-        <img class="card-img shape-round" src="images/graine-anglais.jpg" alt="Enfants et adolescents qui jouent aux cartes en riant autour d'une table" width="1264" height="848" loading="lazy" style="object-position:50% 50%">
-        <h3>Anglais &amp; Aisance</h3>
-        <p>Des chansons, des histoires, des jeux. L'anglais se vit avant de s'apprendre, et le plaisir de communiquer passe avant la performance.</p>
-        <a class="btn-soft" href="anglais-aisance.html">En savoir plus →</a>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#E8A6B0"/></svg>
-      </div>
-      <div class="pillar reveal">
-        <img class="card-img shape-oval" src="images/graine-parents.jpg" alt="Un couple et leur enfant qui rient ensemble autour d'un cahier" width="1264" height="848" loading="lazy" style="object-position:55% 45%">
-        <h3>Parents &amp; Enfants</h3>
-        <p>Des outils concrets pour des moments d'apprentissage apaisés à la maison. C'est aussi un espace d'écoute pour vos questions de parent : vos doutes, vos choix, ce qui vous semble juste pour votre enfant.</p>
-        <a class="btn-soft" href="parents-enfants.html">En savoir plus →</a>
-        <svg class="pillar-leaf" width="90" height="90" viewBox="0 0 24 24" fill="none"><path d="M12 21C12 13 7 9 3 9c0 8 5 12 9 12Z" fill="#D9B679"/></svg>
-      </div>
-    </div>
-    <p class="formats reveal">Les séances se vivent en individuel ou en petit groupe, en présentiel ou à distance, selon ce qui convient le mieux à votre enfant.</p>
   </div>
 </section>
 
